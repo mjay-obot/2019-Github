@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 95%;
+    margin: 0 auto;
+    padding-left: 1rem;
+}
+@media (max-width: 920px) {
+    .nav-bar {
+        display: flex;
+    }
+    .wrap, .nav-bar, .footer {
+        flex-direction: column;
+    }
+}
+.nav-bar {
+    margin: 0.5rem 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(53, 45, 45);
+}
+.icons a {
+    color: white;
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 0.5rem;
+}
+.nav-bar ul {
+    margin: 0;
+    padding: 0;
+}
+.nav-bar li {
+    display: inline-block;
+}
+.nav-bar a:not(.icons a):hover {
+    color: rgb(92, 151, 92);
+}
+.nav-bar a:not(.icons a) {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: 0.5s;
+}
+.nav-bar input {
+    margin: 1rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    width: 18rem;
+    border: none;
+}
+.nav-bar input[type="search"]::placeholder, fieldset input::placeholder{
+    color: rgb(92, 151, 92);
+    font-size: 1rem;
+}
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -1.5rem 1rem 0 0;
+    background-color:rgb(78, 70, 70);
+}
+.body1 {
+    margin-right: 2rem;
+    color: white;
+}
+.body1 h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.body1 p {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+}
+.body2 {
+    margin-top: 2rem;
+    border: none;
+    border-color: black;
+}
+.body2 a {
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(92, 151, 92);
+}
+fieldset {
+    background-color: white;
+    border: none;
+    padding: 1.3rem 1rem;
+    margin-bottom: 2rem;
+}
+fieldset input, fieldset button {
+    display: block;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 0.8rem 0.8rem;
+    width: 23rem;
+}
+fieldset button {
+    background-color: rgb(92, 151, 92);
+    color:white;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.6s
+}
+fieldset button:hover {
+    color: black;
+    font-weight: bold;
+    background-color: rgb(53, 45, 45);
+}
+.footer {
+    text-align: center;
+    background-color: rgb(53, 45, 45);
+    margin: -1.28rem 1rem 0 0;
+    padding-bottom: 0.3rem;
+}
+.footer h2 {
+    padding: 1rem 0 0 0;
+    margin-bottom: 0;
+}
+.footer p {
+    margin-top: 0;
+}
+.fa-solid {
+    padding: 0.5rem;
+    color: red;
+    font-size: 1.2rem;
+}
+.footer a {
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.footer .fa-brands {
+    font-size: 1.3rem;
+}
